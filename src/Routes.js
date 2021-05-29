@@ -9,6 +9,8 @@ import {
 
 import SignIn from "./View/login";
 import Dashboard from "./View/Home/Home";
+import Datadiri from "./View/DataDiri/Datadiri";
+import pengumuman from "./View/Pengumuman/Pengumuman";
 import history from "./history";
 
 export default class Routes extends Component {
@@ -21,6 +23,16 @@ export default class Routes extends Component {
                     </Route>
                     <Route path="/signin" exact component={SignIn} />
                     <Route path="/Dashboard" exact component={Dashboard} />
+                    <Route Path="/DataDiri" exact component={Datadiri}/>
+                    <Route path="/Pengumuman">
+                        <pengumuman/>
+                    </Route>
+                    <Route path="/finance">
+                    </Route>
+                    <Route path="/izinBermalam">
+                    </Route>
+                    <Route path="/izinKeluar">
+                    </Route>
                 </Switch>
             </Router>
         )

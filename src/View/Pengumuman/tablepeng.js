@@ -13,7 +13,9 @@ function createData(id, date, name, isi) {
     return { id, date, name, isi};
 }
 
-
+function preventDefault(event) {
+    event.preventDefault();
+}
 
 const useStyles = makeStyles((theme) => ({
     seeMore: {
@@ -26,8 +28,8 @@ const useStyles = makeStyles((theme) => ({
 const rows = [
     createData(0, '16 Mar, 2019', 'Kuliah Umum'),
 ];
-export default function Orders() {
-        const classes = useStyles();
+export default function tablepeng() {
+    const classes = useStyles();
     return (
         <React.Fragment>
             <Title>Pengumuman</Title>

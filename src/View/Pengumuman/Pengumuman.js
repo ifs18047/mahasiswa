@@ -15,9 +15,7 @@ import Paper from '@material-ui/core/Paper';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import { mainListItems, secondaryListItems } from '../listItems';
-import Chart from './Chart';
-import Orders from './Orders';
-
+import tablepeng from "./tablepeng";
 
 const drawerWidth = 240;
 
@@ -100,7 +98,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function Dashboard() {
+export default function pengumuman() {
     const classes = useStyles();
     const [open, setOpen] = React.useState(true);
     const handleDrawerOpen = () => {
@@ -125,7 +123,7 @@ export default function Dashboard() {
                         <MenuIcon />
                     </IconButton>
                     <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-                        Dashboard
+                        Pengumuman
                     </Typography>
                 </Toolbar>
             </AppBar>
@@ -152,12 +150,7 @@ export default function Dashboard() {
                     <Grid container spacing={3}>
                         <Grid item xs={12} >
                             <Paper className={fixedHeightPaper}>
-                                <Chart />
-                            </Paper>
-                        </Grid>
-                        <Grid item xs={12}>
-                            <Paper className={classes.paper}>
-                                <Orders />
+                                <tablepeng/>
                             </Paper>
                         </Grid>
                     </Grid>
